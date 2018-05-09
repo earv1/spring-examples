@@ -11,7 +11,10 @@ import org.junit.jupiter.api.Test;
 //Create a Nemesis class, inject the Nemesis class into the Batman class
 //and follow the instructions in the speakToChiefOfPolice method in the Batman Class
 //Bonus points of Nemesis is an interface or abstract class and you inject something
-//that inherets from it. HINT, the CriminalDatabase works like this
+//that inherits from it. HINT, the CriminalDatabase works like this
+
+//Move the TestCriminalDatabase to the test folder.
+//Keep the package the same and see what happens
 
 public class BatmanTest {
 
