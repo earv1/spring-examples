@@ -2,4 +2,4 @@
 *target/surefire-reports*
 *.jar
 *.iml
-*target/maven*
+*target*
