@@ -37,6 +37,8 @@ public class Batman {
 
     private void speakToChiefOfPolice() {
         System.out.println("I'm batman");
+        //Make Nemesis get used here
+        //Put the crimeTakingPlace variable into get method in the nemesis Class
         crimeTakingPlace = true;
         criminalName = "joker";
     }
