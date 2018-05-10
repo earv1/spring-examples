@@ -31,13 +31,15 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 //BatmanTest.java is an example of a unit test whereas BatmanIntegrationTest.java is also a unit test but
 // might be considered an integration test because of its reliance on spring.
 
-//Move the BatmanCriminalDatabase to the com.learning.examples.application. Did it work?
+//Go into example 3 and run: mvn -Dtest=BatmanIntegrationTest test
+//Now move the BatmanCriminalDatabase to the com.learning.examples.application. Did it work?
 //Why or why not?
 
-//Change the active profile to newtest and run the test, what happens?
+//Change the active profile to newtest and run 'mvn -Dtest=BatmanIntegrationTest test' again, what happens?
+
 //Now change the TestCriminalDatabse to newtest and run it again. These are how profiles work. It's that easy
 //Finally copy this test and make it run with a new profile called test2
-//Copy TestCriminalDatabase to TestCriminalDatabase2 and run the profile
+//Copy TestCriminalDatabase to TestCriminalDatabase2 and run the new test with  'mvn -Dtest=BatmanIntegrationTest2 test'
 public class BatmanIntegrationTest {
 
     private MockMvc mockMvc;
