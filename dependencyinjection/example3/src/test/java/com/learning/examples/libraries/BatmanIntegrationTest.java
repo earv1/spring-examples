@@ -21,6 +21,23 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 @SpringBootTest(classes = {ExamplesApplication.class, TestCriminalDatabase.class})
 @WebAppConfiguration
 @ActiveProfiles("test")
+
+
+
+//Again, 30 minutes to complete the following.
+//Look at BatmanTest.java in example3. This is similar to the old way of testing.
+//Think about why we would want to startup spring in this example wheras BatmanTest.java seems to work just fine.
+//Also familiarise yourself between the difference between a unit test and an Integration test.
+//BatmanTest.java is an example of a unit test whereas BatmanIntegrationTest.java is also a unit test but
+// might be considered an integration test because of its reliance on spring.
+
+//Move the BatmanCriminalDatabase to the com.learning.examples.application. Did it work?
+//Why or why not?
+
+//Change the active profile to newtest and run the test, what happens?
+//Now change the TestCriminalDatabse to newtest and run it again. These are how profiles work. It's that easy
+//Finally copy this test and make it run with a new profile called test2
+//Copy TestCriminalDatabase to TestCriminalDatabase2 and run the profile
 public class BatmanIntegrationTest {
 
     private MockMvc mockMvc;
