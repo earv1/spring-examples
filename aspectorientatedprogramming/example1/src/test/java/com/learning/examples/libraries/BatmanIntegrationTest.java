@@ -57,7 +57,6 @@ public class BatmanIntegrationTest {
 
     @BeforeEach
     void beforeEach(){
-        throws Runtime
         mockMvc = webAppContextSetup(webApplicationContext).build();
     }
 
