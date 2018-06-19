@@ -1,7 +1,12 @@
-package com.learning.examples.libraries;
+package com.learning.demo.libraries;
+
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
+@Component
+@Profile("live")
 public class BatmanCriminalDatabase implements CriminalDatabase {
 
     public String fetchInformation(String criminalName) {

@@ -1,7 +1,7 @@
 package com.learning.demo;
 
 import com.google.common.collect.ImmutableList;
-import com.learning.demo.controller.CriminalsController;
+import com.learning.demo.rest.CriminalsController;
 import com.learning.demo.model.Criminal;
 import com.learning.demo.repository.CriminalsRepository;
 import org.junit.jupiter.api.BeforeAll;
@@ -33,6 +33,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @ContextConfiguration(classes = DemoApplication.class)
 @ActiveProfiles("test")
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+
+//TODO
+/* Exercises */
+/*
+    Look at CriminalsJDBCRepository.java
+
+
+ */
 public class DatabaseTest {
 
     private MockMvc mockMvc;
@@ -48,6 +56,7 @@ public class DatabaseTest {
     void beforeAll(){
     }
 
+    //Ignore this for now. Just know we are loading the database with information
     @BeforeEach
     void beforeEach(){
         List<Criminal> Criminals = ImmutableList.<Criminal>builder()
@@ -59,13 +68,6 @@ public class DatabaseTest {
         CriminalsRepository.saveAll(Criminals);
         mockMvc = webAppContextSetup(webApplicationContext).build();
     }
-
-    @Test
-    void checkCrimeDatabaseFromController() throws Exception {
-        mockMvc.perform(get("/database/api/Criminals"))
-                .andExpect(status().isOk());
-    }
-
 
     @Test
     void checkJokerExists() throws Exception {

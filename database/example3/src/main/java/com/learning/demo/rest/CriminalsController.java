@@ -1,4 +1,4 @@
-package com.learning.demo.controller;
+package com.learning.demo.rest;
 
 import com.learning.demo.exception.ResourceNotFoundException;
 import com.learning.demo.model.Criminal;
